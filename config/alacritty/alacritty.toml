@@ -27,12 +27,16 @@ background = "#002b36"
 foreground = "#839496"
 
 [font]
-size = 9
+size = 12
 
 [font.normal]
 family = "Fira Code"
 style = "Regular"
 
 [window]
-decorations = "None"
 opacity = 0.9
+decorations = "Buttonless"
+padding = { x = 5, y = 5 }
+
+[terminal]
+shell = "/opt/homebrew/bin/fish"

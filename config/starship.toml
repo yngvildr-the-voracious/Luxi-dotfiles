@@ -1,0 +1,5 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+[directory]
+fish_style_pwd_dir_length = 1
+

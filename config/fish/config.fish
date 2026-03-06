@@ -14,7 +14,9 @@ fish_add_path ~/.local/bin
 fish_add_path ~/.pulumi/bin
 fish_add_path ~/.poetry/bin
 fish_add_path ~/.krew/bin
-fish_add_path ~/.cargi/bin
+fish_add_path ~/.cargo/bin
+fish_add_path /opt/homebrew/bin
+fish_add_path /usr/local/bin
 
 starship init fish | source
 direnv hook fish | source
@@ -25,3 +27,6 @@ if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
+
+# Scaleway CLI autocomplete initialization.
+eval (scw autocomplete script shell=fish)

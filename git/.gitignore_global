@@ -4,3 +4,6 @@
 .envrc
 go.work
 go.work.sum
+.zed
+.helm_ls_cache
+.terragrunt-cache
